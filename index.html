@@ -193,20 +193,20 @@
         </div>
 
         <!-- seat grid here =========================================== -->
-            <div class="driver-seat flex justify-end">
+            <div class="driver-seat flex justify-end mt-6">
               <img src="images/steering-wheel.png" alt="" class="bg-[#F7F8F8] rounded-lg text-center py-3 mb-8 px-8">
             </div>
           <div class="main-grid grid grid-cols-5 gap-10 items-center">
             <div class="row-1">A</div>
-            <div class="a1 bg-[#F7F8F8] rounded-lg text-center py-3">A1</div>
-            <div class="a2 bg-[#F7F8F8] rounded-lg text-center py-3">A2</div>
-            <div class="a3 bg-[#F7F8F8] rounded-lg text-center py-3">B1</div>
-            <div class="a4 bg-[#F7F8F8] rounded-lg text-center py-3">B2</div>
+            <div class="a1 bg-[#F7F8F8] rounded-lg text-center py-3" id="a1" onclick="addingBackground('a1', '#1DD100')">A1</div>
+            <div class="a2 bg-[#F7F8F8] rounded-lg text-center py-3" id="a2" onclick="addingBackground('a2', '#1DD100')">A2</div>
+            <div class="b1 bg-[#F7F8F8] rounded-lg text-center py-3" id="b1" onclick="addingBackground('b1', '#1DD100')">B1</div>
+            <div class="b2 bg-[#F7F8F8] rounded-lg text-center py-3" id="b2" onclick="addingBackground('b2', '#1DD100')">B2</div>
             <div class="row-1">B</div>
-            <div class="a5 bg-[#F7F8F8] rounded-lg text-center py-3">A3</div>
-            <div class="a6 bg-[#F7F8F8] rounded-lg text-center py-3">A4</div>
-            <div class="a7 bg-[#F7F8F8] rounded-lg text-center py-3">B3</div>
-            <div class="a8 bg-[#F7F8F8] rounded-lg text-center py-3">B4</div>
+            <div class="a3 bg-[#F7F8F8] rounded-lg text-center py-3" id="a3" onclick="addingBackground('a3', '#1DD100')">A3</div>
+            <div class="a4 bg-[#F7F8F8] rounded-lg text-center py-3" id="a4" onclick="addingBackground('a4', '#1DD100')">A4</div>
+            <div class="b3 bg-[#F7F8F8] rounded-lg text-center py-3" id="b3" onclick="addingBackground('b3', '#1DD100')">B3</div>
+            <div class="b4 bg-[#F7F8F8] rounded-lg text-center py-3" id="b4" onclick="addingBackground('b4', '#1DD100')">B4</div>
             
           </div>
 
@@ -288,5 +288,8 @@
     </main>
     <!-- footer starts here ============================================================= -->
     <footer></footer>
+
+    <!-- js file linked here -->
+    <script src="index.js"></script>
 </body>
 </html>
