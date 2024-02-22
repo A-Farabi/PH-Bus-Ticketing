@@ -32,6 +32,7 @@ for (const seat of allSeat) {
 
     seatCount()
     
+    seatLeft()
 
   })
 }
@@ -67,14 +68,19 @@ function updateGrandTotal(control) {
 function seatCount(){
   const seatDefaultValue = document.getElementById('seat-count').innerText
   const convertedSeat = parseInt(seatDefaultValue)
-  console.log(convertedSeat);
   const seatSum = convertedSeat + 1
   document.getElementById('seat-count').innerText = seatSum
 }
 
 
+function seatLeft() {
+  const seatLeftDefault = document.getElementById('seat-left').innerText
+  const convertedSeatLeftDefault = parseInt(seatLeftDefault)
+  const seatLeftSum = convertedSeatLeftDefault - 1
+  document.getElementById('seat-left').innerText = seatLeftSum
+}
+
 function getConvertedValue(id) {
   const primaryInput = document.getElementById(id).innerText
   return parseInt(primaryInput)
 }
-
