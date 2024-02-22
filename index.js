@@ -49,13 +49,18 @@ function updateTotalCost(price) {
 
 function updateGrandTotal(control) {
   const totalCostValue = getConvertedValue('total-cost')
-  // console.log(totalCostValue);
   const couponCode = document.getElementById('coupon-code').value;
   const totalCost = document.getElementById('grand-total').innerText = totalCostValue
   
   if (control) {
-    if (couponCode == 'helo') {
-      const discount = totalCost * 0.2
+    if (couponCode == 'NEW15') {
+      const discount = totalCost * 0.15
+      const test = document.getElementById('grand-total').innerText = totalCostValue - discount
+      const couponField = document.getElementById('coupon-field')
+      couponField.classList.add('hidden')
+    }
+    else if(couponCode == 'couple20'){
+      const discount = totalCost * 0.15
       const test = document.getElementById('grand-total').innerText = totalCostValue - discount
       const couponField = document.getElementById('coupon-field')
       couponField.classList.add('hidden')
