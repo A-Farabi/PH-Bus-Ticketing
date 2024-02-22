@@ -1,7 +1,7 @@
 const allSeat = document.getElementsByClassName('seat')
 for (const seat of allSeat) {
   seat.addEventListener("click", function(event) {
-    // seat.classList.add('green-color')
+    seat.classList.add('green-color');
     const name = event.target.innerText;
     console.log(name);
     const SeatClass = 'Economy';
@@ -29,6 +29,8 @@ for (const seat of allSeat) {
     parseInt(price)
     updateTotalCost(price)
     updateGrandTotal()
+
+    seatCount()
     
 
   })
@@ -62,6 +64,13 @@ function updateGrandTotal(control) {
   }
 }
 
+function seatCount(){
+  const seatDefaultValue = document.getElementById('seat-count').innerText
+  const convertedSeat = parseInt(seatDefaultValue)
+  console.log(convertedSeat);
+  const seatSum = convertedSeat + 1
+  document.getElementById('seat-count').innerText = seatSum
+}
 
 
 function getConvertedValue(id) {
