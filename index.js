@@ -1,9 +1,9 @@
 const allSeat = document.getElementsByClassName('seat')
 for (const seat of allSeat) {
   seat.addEventListener("click", function(event) {
-    seat.classList.add('green-color');
+    event.target.classList.add('green-color');
+    console.log(event.target);
     const name = event.target.innerText;
-    console.log(name);
     const SeatClass = 'Economy';
     const price = 550;
     

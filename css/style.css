@@ -12,6 +12,6 @@
 }
 
 .green-color{
-    background-color: #1DD100;
+    background-color: #1DD100 !important;
     /* color: black; */
 }
