@@ -46,9 +46,20 @@ function updateTotalCost(price) {
 
 function updateGrandTotal(control) {
   const totalCostValue = getConvertedValue('total-cost')
+  // console.log(totalCostValue);
+  const couponCode = document.getElementById('coupon-code').value;
   const totalCost = document.getElementById('grand-total').innerText = totalCostValue
-
   
+  if (control) {
+    if (couponCode == 'helo') {
+      const discount = totalCost * 0.2
+      const test = document.getElementById('grand-total').innerText = totalCostValue - discount
+      console.log(test);
+    }
+    else{
+      return alert('Invalid, Provide a valid one')
+    }
+  }
 }
 
 
