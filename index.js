@@ -57,7 +57,8 @@ function updateGrandTotal(control) {
     if (couponCode == 'helo') {
       const discount = totalCost * 0.2
       const test = document.getElementById('grand-total').innerText = totalCostValue - discount
-      console.log(test);
+      const couponField = document.getElementById('coupon-field')
+      couponField.classList.add('hidden')
     }
     else{
       return alert('Invalid, Provide a valid one')
