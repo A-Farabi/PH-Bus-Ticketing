@@ -34,6 +34,8 @@ for (const seat of allSeat) {
     
     seatLeft()
 
+    modal()
+
   })
 }
 
@@ -59,7 +61,7 @@ function updateGrandTotal(control) {
       const couponField = document.getElementById('coupon-field')
       couponField.classList.add('hidden')
     }
-    else if(couponCode == 'couple20'){
+    else if(couponCode == 'couple 20'){
       const discount = totalCost * 0.15
       const test = document.getElementById('grand-total').innerText = totalCostValue - discount
       const couponField = document.getElementById('coupon-field')
@@ -84,6 +86,13 @@ function seatLeft() {
   const convertedSeatLeftDefault = parseInt(seatLeftDefault)
   const seatLeftSum = convertedSeatLeftDefault - 1
   document.getElementById('seat-left').innerText = seatLeftSum
+}
+
+function modal() {
+  // document.getElementById('submit-button').addEventListener('click', function(){
+    document.getElementById('submit-button').disabled = false
+
+  // })
 }
 
 function getConvertedValue(id) {
