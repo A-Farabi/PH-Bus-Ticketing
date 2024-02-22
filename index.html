@@ -239,18 +239,6 @@
           </div>
           <div class="border-dashed border-2"></div>
 
-          <!-- <div class="row-right-2 flex justify-between font-inter font-lg text-[#03071299] my-5">
-            <p id="selected-seat"></p>
-            <p>Economy</p>
-            <p>550</p>
-          </div>
-
-          <div class="row-right-3 flex justify-between font-inter font-lg text-[#03071299] my-5">
-            <p id="selected-seat"></p>
-            <p>Economy</p>
-            <p>550</p>
-          </div> -->
-
           <div id="seat-details">
 
           </div>
@@ -261,21 +249,21 @@
 
           <div class="row-right-4 flex justify-between font-inter text-lg font-medium my-5">
             <p>Total price</p>
-            <p>BDT <span>0</span></p>
+            <p>BDT <span id="total-cost">0</span></p>
           </div>
 
           <div class="coupon-div">
             <label class="input input-bordered flex items-center gap-2">
               <input type="text" class="grow text-lg" placeholder="Have any coupon?" />
               <div class="">
-                <span class="btn text-white bg-[#1DD100] ">Apply</span>
+                <span class="btn text-white bg-[#1DD100]" id="coupon-code" onclick="updateGrandTotal('apply-btn')">Apply</span>
               </div>
             </label>
           </div>
 
           <div class="grand-total flex justify-between font-inter text-xl font-semibold text-black my-5">
             <p>Grand Total</p>
-            <p>BDT <span>0</span></p>
+            <p>BDT <span id="grand-total">0</span></p>
           </div>
 
         </div>
