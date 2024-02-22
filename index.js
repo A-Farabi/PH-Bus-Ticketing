@@ -34,7 +34,6 @@ for (const seat of allSeat) {
     
     seatLeft()
 
-    modal()
 
   })
 }
@@ -90,8 +89,8 @@ function seatLeft() {
 
 function modal() {
   // document.getElementById('submit-button').addEventListener('click', function(){
-    document.getElementById('submit-button').disabled = false
-
+    // const modalGet = document.getElementById('continu-button')
+    // modalGet.classList.add('modal-open')
   // })
 }
 
